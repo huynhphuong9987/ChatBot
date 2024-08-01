@@ -7,7 +7,6 @@ import ChatWindow from './pages/ChatWindow.jsx';
 
 
 // axios.defaults.baseURL = "http://localhost:8000";
-
 axios.defaults.baseURL = "https://chatbot-9yzr.onrender.com";
 axios.defaults.withCredentials = true;
 
