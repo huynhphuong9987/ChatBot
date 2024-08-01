@@ -123,7 +123,7 @@ const ChatWindow = () => {
                                 </div>
                                 <div className='system self-start'>
                                     <div className='px-7'>     
-                                        {ele.system.split("\n").map((e,k) => (
+                                        {ele.system.split("  ").map((e,k) => (
                                             <p key={k}> 
                                                 {e} 
                                                 <br/><br/>
