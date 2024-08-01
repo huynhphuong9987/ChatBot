@@ -52,10 +52,12 @@ chain = ConversationChain(
     memory=memory,
 )
 
+
 ########### Create Flask app ###########
 app = Flask(__name__,static_url_path=None)
 app.config.from_object(__name__)
-cors = CORS(app, origins= "http://localhost:5173", supports_credentials=True)
+# cors = CORS(app, origins= "http://localhost:5173", supports_credentials=True)
+cors = CORS(app, origins= "https://chatbot-app-eox5.onrender.com", supports_credentials=True)
 app.app_context()
 
 ########### For testing #############
