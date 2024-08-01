@@ -1,0 +1,206 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  
+  /* --primary-color-: #254336;
+  --secondary-color-: #6B8A7A;
+  --thirdary-color-: #B7B597;
+  --forthdary-color-: #DAD3BE; */
+
+  /* --primary-color-: #A0937D;
+  --secondary-color-: #E7D4B5;
+  --thirdary-color-: #B6C7AA;
+  --forthdary-color-: #F6E6CB; */
+
+    /* --primary-color-: #A0937D;
+  --secondary-color-: #E7D4B5;
+  --thirdary-color-: #B6C7AA;
+  --forthdary-color-: #F6E6CB; */
+
+  --primary-color-: #914F1E;
+  --secondary-color-: #B5C18E;
+  --thirdary-color-: #DEAC80;
+  --forthdary-color-: #F7DCB9;
+
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3em;
+  font-weight: bolder;
+  padding: 0;
+  color: var(--primary-color-);
+  margin-top: 1rem;
+} 
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid var(--primary-color-);
+  margin-top: 1em;
+  padding: 0;
+}
+
+
+h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  padding: 2rem;
+}
+
+h3 {
+  /* margin-left:4rem; */
+  /* width: 8rem;
+  height:3rem;
+  padding: 0;
+  font-size: 4rem; */
+  background-color: var(--forthdary-color-);
+  /* padding: 2rem; */
+  border-radius: 1.5rem;
+}
+
+input, button {
+  padding: 0.8rem 4rem;
+  font-size: x-large;
+  border-radius: 3rem;
+  width: 40rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  height: 40vh;
+  background-color: var(--secondary-color-);
+  border-radius: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  width: 70rem;
+  border: 1px solid #ddd;
+  background-color: var(--secondary-color-);
+  border-radius:2rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.window-top, .window-bottom {
+  flex: 0 0;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  height: 100%;
+}
+
+.window-top {
+  border-radius:2rem;
+  /* background-color: var(--secondary-color-); */
+  top: 0;
+}
+
+.window-chat {
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+}
+
+.window-bottom{
+  bottom: 0;
+}
+
+.system {
+  text-align: left;
+  width: 40rem;
+  padding: 2rem;
+  margin:4rem 0;
+  border-radius:2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--forthdary-color-);
+  /* color: #ffffff; */
+}
+
+.user{
+  text-align: right;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--thirdary-color-);
+}
+
+h5 {
+ /* position: fixed;  Fixes the position relative to the viewport */
+  /* bottom:5rem;    Distance from the bottom of the viewport */
+  /* right: 10rem;     Distance from the right of the viewport */
+  background-color: var(--primary-color-); /* Background color */
+  color: white;    /* Text color */
+  padding: 10px;   /* Padding around the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a floating effect */
+  z-index: 1000;   /* Ensures the element is on top of other content */
+
+}
+
+h6 {
+  /* position: fixed;  Fixes the position relative to the viewport */
+   /* bottom:5rem;    Distance from the bottom of the viewport */
+   /* right: 10rem;     Distance from the right of the viewport */
+   background-color: var(--primary-color-); /* Background color */
+   color: white;    /* Text color */
+   padding: 10px;   /* Padding around the text */
+   width: 5rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a floating effect */ 
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
