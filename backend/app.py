@@ -1,11 +1,11 @@
 from flask import Flask, jsonify, request
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 from langchain_groq import ChatGroq
-from langchain_core.prompts import ChatPromptTemplate
+# from langchain_core.prompts import ChatPromptTemplate
+# from langchain_core.runnables.history import RunnableWithMessageHistory
 # from langchain_community.document_loaders.pdf import PyPDFDirectoryLoader
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
-from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts.prompt import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
 
